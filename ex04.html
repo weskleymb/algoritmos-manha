@@ -1,0 +1,24 @@
+<html>
+<script>
+let nota1 = parseFloat(prompt('Informe a nota da 1ª avaliação'));
+let nota2 = parseFloat(prompt('Informe a nota da 2ª avaliação'));
+let nota3 = parseFloat(prompt('Informe a nota da 3ª avaliação'));
+
+let media = (nota1 + nota2 + nota3) / 3;
+
+if (media >= 7) {
+	alert('Parabéns! Você está APROVADO com média ' + media.toFixed(2));
+} else if (media < 5) {
+	alert('Que pena! Infelizmente você está REPROVADO com a média ' + media.toFixed(2));
+} else {
+	alert('Quase! Você encontra-se em RECUPERAÇÃO com média ' + media.toFixed(2));
+	let nota4 = parseFloat(prompt('Informe a nota da 4ª avaliação'));
+	media = (media + nota4) / 2;
+	if (media >= 7) {
+		alert('Parabéns! Você está APROVADO com média ' + media.toFixed(2));
+	} else {
+		alert('Que pena! Infelizmente você está REPROVADO com a média ' + media.toFixed(2));
+	}
+}
+</script>
+</html>
