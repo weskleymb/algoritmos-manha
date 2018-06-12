@@ -1,0 +1,16 @@
+<html>
+<script type="text/javascript">
+let letra1 = prompt('Digite uma letra');
+
+let letra = letra1.toLowerCase();
+
+if (letra=='a' || letra=='e' || letra=='i' || 
+	letra=='o' || letra=='u') {
+	alert('Você digitou a vogal ' + letra1);
+} else if (!isNaN(letra)) {
+	alert('Você digitou o número ' + letra);
+} else {
+	alert('Você digitou a consoante ' + letra1);
+}
+</script>
+</html>

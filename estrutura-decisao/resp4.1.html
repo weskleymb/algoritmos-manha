@@ -1,0 +1,20 @@
+<html>
+<script type="text/javascript">
+let letra1 = prompt('Digite uma letra');
+
+let letra = letra1.toLowerCase();
+
+switch (letra) {
+	case 'a': case 'e': case 'i': case 'o': case 'u':
+		alert('Você digitou a vogal ' + letra1);
+		break;
+	default:
+		if (!isNaN(letra)) {
+			alert('Você digitou o número ' + letra);
+		} else {
+			alert('Você digitou a consoante ' + letra1);
+		}
+}
+
+</script>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<script>
+let banana = parseInt(prompt('Banana'));
+let uva = parseInt(prompt('Uva'));
+let caja = parseInt(prompt('Caja'));
+
+let opcao_compra;
+let menor;
+
+if (banana >= uva) {
+	opcao_compra = 'Uva';
+	menor = uva;
+} else {
+	opcao_compra = 'Banana';
+	menor = banana;
+}
+
+if (caja <= menor) {
+	opcao_compra = 'Cajá';
+	menor = caja;
+}
+
+alert(opcao_compra + ' ' + menor);
+</script>
+</html>

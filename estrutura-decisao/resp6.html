@@ -1,0 +1,31 @@
+<html>
+<script>
+let numero1 = parseInt(prompt('Banana'));
+let numero2 = parseInt(prompt('Uva'));
+let numero3 = parseInt(prompt('Caja'));
+
+let auxiliar;
+let mais_barato;
+
+
+if (numero1 > numero2) {
+	auxiliar = numero1;
+	numero1 = numero2;
+	numero2 = auxiliar;
+}
+
+if (numero2 > numero3) {
+	auxiliar = numero2;
+	numero2 = numero3;
+	numero3 = auxiliar;
+}
+
+if (numero1 > numero2) {
+	auxiliar = numero1;
+	numero1 = numero2;
+	numero2 = auxiliar;
+}
+
+alert(numero1 + '->' + numero2 + '->' + numero3);
+</script>
+</html>

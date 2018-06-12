@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+//Validação do nome
+let ehNomeValido = false;
+for (let i = 0; !ehNomeValido; i++) {
+	var nome = prompt('Digite o nome');
+	ehNomeValido = (nome.length > 3);
+}
+alert(nome);
+
+//Validação da idade
+let ehIdadeValida = false;
+for (let i = 0; !ehIdadeValida; i++) {
+	var idade = parseInt(prompt('Sua idade'));
+	ehIdadeValida = (idade >= 0 && idade <= 150);
+}
+alert(idade);
+
+//Validação do sexo
+let ehSexoValido = false;
+for (let i = 0; !ehSexoValido; i++) {
+	var sexo = prompt('Seu sexo');
+	sexo = sexo.toLowerCase();
+	ehSexoValido = (sexo == 'm' || sexo == 'f');
+}
+alert(sexo);
+</script>
+</html>
